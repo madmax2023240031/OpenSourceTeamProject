@@ -12,13 +12,14 @@ def main():
         print("3. 곱하기")
         print("4. 나누기")
         print("5. 지수 계산 (x^y)")
+        print("6. 제곱근 계산 (√x)")
 
         choice = input("번호 : ")
 
         if choice == "quit":
             print("종료")
             break
-        elif choice in ["1", "2", "3", "4", "5"]:
+        elif choice in ["1", "2", "3", "4", "5", "6"]:
             x = float(input("첫 번째 숫자 입력: "))
             y = float(input("두 번째 숫자 입력: "))
             if choice == 1:
@@ -31,6 +32,8 @@ def main():
                 print("결과:", x / y)
             elif choice == 5:
                 print("결과:", x ** y)
+            elif choice == 6:
+                print("결과:", x ** 0.5)
         else:
             print("잘못된 입력.")
 
